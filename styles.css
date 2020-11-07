@@ -1,0 +1,156 @@
+* {
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    min-width: 400px;
+    color: #FFF;
+    background-color: #0C0B0B;
+}
+.container{
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-body {
+    width: 500px;
+    height: 250px;
+    padding: 50px;
+    background-color: #0F0E0E;
+
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.container-header-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-header-title p {
+    margin: 0%;
+    margin-top: -20px;
+}
+
+.container-header-subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container-header-title .button-edit {
+    width: 100px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: #FFF;
+    background-color: #383434;
+    border-radius: 8px;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.badge {
+    width: 135px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+}
+
+.badge span {
+    margin-left: 10px;
+}
+
+.badge p {
+    font-size: 36px;
+    margin: 0px;
+    margin-top: 2px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+@media( max-width: 700px){
+    .container{
+        min-width: 400px;
+    }
+
+    .container-body {
+        min-width: 350px;
+        min-height: 300px;
+        margin-top: -200px;
+        padding: 20px;
+    }
+
+    .container-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .container-header-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-header-subtitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-header-subtitle a{
+        position: absolute;
+        margin-top: 125px;
+    }
+
+    .badges {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .badge {
+        width: 100%;
+        margin-top: 10px;
+    }
+} 
